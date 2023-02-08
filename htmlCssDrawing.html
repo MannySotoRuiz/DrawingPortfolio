@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Collage</title>
+    <link rel="stylesheet" href="./css/html&CssDrawing.css">
+</head>
+<body>
+
+    <div id="gridContainer">
+        <div id="imgContainer">
+            <img src="./media/assignment1/world-cup-fifa2018.gif">
+        </div>
+    </div>
+
+    <div id="container">
+        <audio id="audioPlayer" controls loop>
+                <source src="./media/assignment1/IShowSpeed-World Cup.ogg" type="audio/ogg" >
+        </audio>
+
+        <!-- video cant autoplay unless muted -->
+        <video id="videoPlayer" src="./media/assignment1/WorldCupChanged.mp4" loop playsinline type="video/mp4" width="1280" height="720" controls>  
+        </video>
+    </div>
+    <!-- end of container -->
+
+    <script>
+
+        const video = document.getElementById("videoPlayer");
+        const audio = document.getElementById("audioPlayer");
+        let videoLength;
+
+        //  get video duration
+        video.addEventListener("loadedmetadata", function () {
+            videoLength = video.duration.toFixed(1);
+        }, false);
+
+        //  display the current and remaining times
+        video.addEventListener("timeupdate", function () {
+            //  Current time  
+            let videoTime = video.currentTime;
+            // audio start playing after 16 seconds but we also use <18 b/c w/out it
+            // user won't be able to pause the audio and forces them to listen to it
+            if (videoTime.toFixed(1) > 16 && videoTime.toFixed(1) < 18) {
+                audio.play();
+            } else if (videoTime.toFixed(1) < 16) { // this is to make sure the audio is not played during this time
+                audio.pause();
+            }
+            
+        }, false);
+
+        
+    </script>    
+
+</body>
+</html>
