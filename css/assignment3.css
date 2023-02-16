@@ -1,0 +1,214 @@
+/* centering */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* outline: 1px solid violet; */
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* margin-right: 100px; */
+    /* height: 500px; */
+  }
+  
+  /* proportion and perspective */
+  .scene {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 150px;
+    /* perspective: 100px; */
+    position: relative;
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    transform-style: preserve-3d;
+  }
+  
+  .face {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    /* opacity: 0.5; */
+    border: 1px solid black;
+    /* text */
+    font-family: Arial;
+    line-height: 150px; 
+    /* text-align: center; */
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+  }
+  
+  /* font */
+  .face:nth-child(1) {
+    transform: rotateY(0deg) translateZ(200px);
+    /* background: red; */
+    background-image: url("../media/assignment3/placeholder.png");
+    background-size: cover;
+  }
+  
+  /* right */
+  .face:nth-child(2) {
+    transform: rotateY(90deg) translateZ(200px);
+    background-color: orange;
+  }
+  
+  /* back */
+  .face:nth-child(3) {
+    transform: rotateY(180deg) translateZ(200px);
+    background-image: url("../media/assignment3/placeholder2.jpeg");
+    background-size: cover;
+  }
+  
+  /* left */
+  .face:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(200px);
+    background: blue;
+  }
+  
+  /* top */
+  .face:nth-child(5) {
+    transform: rotateX(90deg) translateZ(200px);
+    background: purple;
+  }
+  
+  /* bottom */
+  .face:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(-50px);
+    background: yellow;
+    opacity: 0.5;
+  }
+
+  .face:nth-child(7) {
+    transform: rotateY(0deg) translateZ(100px);
+    background: red;
+  }
+  
+  /* right */
+  .face:nth-child(8) {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: orange;
+  }
+  
+  /* back */
+  .face:nth-child(9) {
+    transform: rotateY(180deg) translateZ(100px);
+    background: green;
+  }
+  
+  /* left */
+  .face:nth-child(10) {
+    transform: rotateY(-90deg) translateZ(100px);
+    background: blue;
+  }
+  
+  /* top */
+  .face:nth-child(11) {
+    transform: rotateX(90deg) translateZ(100px);
+    background: purple;
+  }
+  
+  /* bottom */
+  .face:nth-child(12) {
+    transform: rotateX(-90deg) translateZ(0px);
+    background: yellow;
+  }
+
+  .face:nth-child(13) {
+    transform: rotateY(0deg) translateZ(100px);
+    background: red;
+  }
+  
+  /* right */
+  .face:nth-child(14) {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: orange;
+  }
+  
+  /* back */
+  .face:nth-child(15) {
+    transform: rotateY(180deg) translateZ(100px);
+    background: green;
+  }
+  
+  /* left */
+  .face:nth-child(16) {
+    transform: rotateY(-90deg) translateZ(100px);
+    background: blue;
+  }
+  
+  /* top */
+  .face:nth-child(16) {
+    transform: rotateX(90deg) translateZ(100px);
+    background: purple;
+  }
+  
+  /* bottom */
+  .face:nth-child(18) {
+    transform: rotateX(-90deg) translateZ(0px);
+    background: yellow;
+  }
+  
+  /* transition */
+  .cube {
+    transition-property: transform;
+    transition-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .cube:hover {
+    transform: rotateY(360deg);
+  }
+  
+  .cube:active {
+    transform: rotateZ(180deg);
+  }
+  .scene:active {
+    animation-name: zoomin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+  }
+  
+  
+  /* animation */
+  /* @keyframes spin {
+    from {transform: rotateY(0deg) rotateX(0deg);}
+    to {transform: rotateY(360deg) rotateX(360deg);}
+  } */
+  
+  /* @keyframes spin {
+    from {transform: rotateY(0deg) rotateZ(0deg);}
+    to {transform: rotateY(360deg) rotateZ(360deg);}
+  }
+  .cube {
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes zoomin {
+    from {perspective: 1000;}
+    to {perspective: 100;}
+  } */
+
+  /* .cube:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 1s;
+  } */

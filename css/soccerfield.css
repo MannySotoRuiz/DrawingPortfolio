@@ -1,0 +1,122 @@
+/* centering */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* proportion and perspective */
+  #scene {
+    width: 500px;
+    height: 300px;
+    perspective: 1100px;
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  
+  .face {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    /* opacity: 0.8; */
+    border: 1px solid black;
+    /* text */
+    font-family: Arial;
+    color: white;
+    text-align: center;
+  }
+  
+  /* font */
+  .face:nth-child(1) {
+    transform: rotateY(0deg) translateZ(250px);
+    background-image: url("../media/assignment3/soccerfield.jpeg");
+    background-size: cover;
+  }
+  
+  /* right */
+  .face:nth-child(2) {
+    transform: rotateY(90deg) translateZ(400px) translateX(-350px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  
+  /* back */
+  .face:nth-child(3) {
+    transform: rotateY(180deg) translateZ(-249px);
+    background: rosybrown;
+  }
+  
+  /* left */
+  .face:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(100px) translateX(350px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  
+  /* top */
+  .face:nth-child(5) {
+    transform: rotateX(90deg) translateZ(100px) translateY(350px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  
+  /* bottom */
+  .face:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(200px) translateY(-350px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+
+  #soccerBall {
+    position: absolute;
+    top: 105px;
+    left: 200px;
+  }
+  
+  /* transition */
+  .cube {
+    transition-property: transform;
+    transition-duration: 2s;
+  }
+  
+  /* .cube:hover {
+    transform: rotateY(180deg);
+  } */
+  
+  .cube:active {
+    transform:rotateX(25deg);
+  }
+
+@keyframes skate {
+    0% {transform:  translate(0px, 0px);}
+    25% {transform: translate(150px, 100px) rotate(0deg);}
+    50% {transform: translate(200px 200px) rotate(90deg);}
+    75% {transform: translate(0px, 0px) rotate(360deg);}
+    100% {transform: translate(0px, 0px);}
+}
+#soccerBall {
+    animation-name: skate;
+    animation-duration: 5s;
+}
+  
+  
+  /* animation */
+  /* @keyframes spin {
+    from {transform: rotateY(0deg) rotateX(0deg);}
+    to {transform: rotateY(360deg) rotateX(360deg);}
+  }
+  
+  .cube {
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+  } */
