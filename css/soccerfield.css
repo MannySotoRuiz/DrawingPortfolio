@@ -5,6 +5,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: url("../media/assignment3/soccer_background.jpeg");
+    background-size: contain; */
   }
   
   /* proportion and perspective */
@@ -25,11 +27,6 @@ body {
     position: absolute;
     width: 500px;
     height: 300px;
-    /* opacity: 0.8; */
-    border: 1px solid black;
-    /* text */
-    font-family: Arial;
-    color: white;
     text-align: center;
   }
   
@@ -76,9 +73,18 @@ body {
 
   #soccerBall {
     position: absolute;
+    width: 100px;
     top: 105px;
     left: 200px;
   }
+  /* #soccerBall {
+    position: absolute;
+    width: 200px;
+    fill: black;
+    height: auto;
+    top: 105px;
+    left: 200px;
+  } */
   
   /* transition */
   .cube {
@@ -94,17 +100,39 @@ body {
     transform:rotateX(25deg);
   }
 
-@keyframes skate {
+  @keyframes firstHalf {
     0% {transform:  translate(0px, 0px);}
-    25% {transform: translate(150px, 100px) rotate(0deg);}
-    50% {transform: translate(200px 200px) rotate(90deg);}
-    75% {transform: translate(0px, 0px) rotate(360deg);}
-    100% {transform: translate(0px, 0px);}
-}
-#soccerBall {
-    animation-name: skate;
+    25% {transform: translate(110px, 105px) rotate(0deg);}
+    50% {transform: translate(190px, -115px) rotate(90deg);}
+    75% {transform: translate(80px, 0px) rotate(360deg);}
+    100% {transform: translate(200px, 0px);}
+  }
+
+  @keyframes secondHalf {
+    0% {transform:  translate(200px, 0px);}
+    25% {transform: translate(0px, 0px) rotate(0deg);}
+    50% {transform: translate(-200px, 105px) rotate(90deg);}
+    75% {transform: translate(-80px, 50px) rotate(360deg);}
+    100% {transform: translate(-200px, 0px);}
+  }
+  #soccerBall {
+    animation: 
+      firstHalf 5s linear 0s 1 normal forwards,
+      secondHalf 5s linear 5s 1 normal forwards;
+  }
+
+  @keyframes zoom {
+    0% {transform: perspective(10000px);}
+    25% {transform: perspective(5000px);}
+    50% {transform: perspective(2000px);}
+    75% {transform: perspective(1000px);}
+    100% {transform: perspective(600px);}
+  }
+  .cube:hover {
+    animation-name: zoom;
     animation-duration: 5s;
-}
+    animation-iteration-count: infinite;
+  }
   
   
   /* animation */
