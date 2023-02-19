@@ -1,0 +1,442 @@
+/* centering */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("../media/assignment3/soccer_background.jpeg");
+    background-size: contain; */
+  }
+  
+  /* proportion and perspective */
+  #scene {
+    margin-top: 300px;
+    width: 500px;
+    height: 300px;
+    perspective: 1500px;
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg);
+  }
+  
+  .face {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+  }
+  
+  /* font */
+  .face:nth-child(1) {
+    transform: rotateY(0deg) translateZ(250px);
+    background-image: url("../media/assignment3/soccerfield.jpeg");
+    background-size: cover;
+  }
+  
+  /* right */
+  .face:nth-child(2) {
+    transform: rotateY(90deg) translateZ(490px) translateX(-260px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(3) {
+    transform: rotateY(0deg) translateZ(270px) translateX(500px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(4) {
+    transform: rotateY(90deg) translateZ(510px) translateX(-280px) translateY(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(5) {
+    transform: rotateY(0deg) translateZ(290px) translateX(520px) translateY(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(6) {
+    transform: rotateY(90deg) translateZ(530px) translateX(-300px) translateY(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(7) {
+    transform: rotateY(0deg) translateZ(310px) translateX(540px) translateY(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(8) {
+    transform: rotateY(90deg) translateZ(550px) translateX(-320px) translateY(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(9) {
+    transform: rotateY(0deg) translateZ(330px) translateX(560px) translateY(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(10) {
+    transform: rotateY(90deg) translateZ(570px) translateX(-340px) translateY(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(11) {
+    transform: rotateY(0deg) translateZ(350px) translateX(580px) translateY(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(12) {
+    transform: rotateY(90deg) translateZ(590px) translateX(-360px) translateY(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(13) {
+    transform: rotateY(0deg) translateZ(370px) translateX(600px) translateY(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(14) {
+    transform: rotateY(90deg) translateZ(610px) translateX(-380px) translateY(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(15) {
+    transform: rotateY(0deg) translateZ(390px) translateX(620px) translateY(-120px);
+    background: red;
+  }
+  .face:nth-child(16) {
+    transform: rotateY(90deg) translateZ(570px) translateX(-320px) translateY(-140px);
+    background-image: url("../media/assignment3/stadium.jpg");
+    background-size: cover;
+  }
+  /* .face:nth-child(17) {
+    transform: rotateX(90deg) translateZ(-225px) translateX(620px) translateY(315px);
+    background: blue;
+  } */
+
+  
+  /* back */
+  .face:nth-child(17) {
+    transform: rotateY(180deg) translateZ(-245px);
+    background: blue;
+  }
+  .face:nth-child(18) {
+    transform: rotateY(180deg) translateZ(-245px) translateX(140px) translateY(-160px);
+    background: red;
+  }
+  
+  /* left */
+  .face:nth-child(19) {
+    transform: rotateY(-90deg) translateZ(10px) translateX(260px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(20) {
+    transform: rotateY(0deg) translateZ(270px) translateX(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(21) {
+    transform: rotateY(-90deg) translateZ(30px) translateX(280px) translateY(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(22) {
+    transform: rotateY(0deg) translateZ(290px) translateX(-40px) translateY(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(23) {
+    transform: rotateY(-90deg) translateZ(50px) translateX(300px) translateY(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(24) {
+    transform: rotateY(0deg) translateZ(310px) translateX(-60px) translateY(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(25) {
+    transform: rotateY(-90deg) translateZ(70px) translateX(320px) translateY(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(26) {
+    transform: rotateY(0deg) translateZ(330px) translateX(-80px) translateY(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(27) {
+    transform: rotateY(-90deg) translateZ(90px) translateX(340px) translateY(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(28) {
+    transform: rotateY(0deg) translateZ(350px) translateX(-100px) translateY(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(29) {
+    transform: rotateY(-90deg) translateZ(110px) translateX(360px) translateY(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(30) {
+    transform: rotateY(0deg) translateZ(370px) translateX(-120px) translateY(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(31) {
+    transform: rotateY(-90deg) translateZ(130px) translateX(380px) translateY(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(32) {
+    transform: rotateY(0deg) translateZ(390px) translateX(-140px) translateY(-140px);
+    background: red;
+  }
+  .face:nth-child(33) {
+    transform: rotateY(-90deg) translateZ(150px) translateX(400px);
+    background: green;
+    opacity: 0;
+  }
+  .face:nth-child(34) {
+    transform: rotateY(-90deg) translateZ(210px) translateX(320px) translateY(-140px);
+    background-image: url("../media/assignment3/stadium.jpg");
+    background-size: cover;
+  }
+  
+  /* top */
+  .face:nth-child(35) {
+    transform: rotateX(90deg) translateZ(10px) translateY(260px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(36) {
+    transform: rotateX(0deg) translateZ(270px) translateY(-20px) translateX(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(37) {
+    transform: rotateX(90deg) translateZ(30px) translateY(280px) translateX(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(38) {
+    transform: rotateX(0deg) translateZ(290px) translateY(-40px) translateX(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(39) {
+    transform: rotateX(90deg) translateZ(50px) translateY(300px) translateX(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(40) {
+    transform: rotateX(0deg) translateZ(310px) translateY(-60px) translateX(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(41) {
+    transform: rotateX(90deg) translateZ(70px) translateY(320px) translateX(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(42) {
+    transform: rotateX(0deg) translateZ(330px) translateY(-80px) translateX(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(43) {
+    transform: rotateX(90deg) translateZ(90px) translateY(340px) translateX(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(44) {
+    transform: rotateX(0deg) translateZ(350px) translateY(-100px) translateX(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(45) {
+    transform: rotateX(90deg) translateZ(110px) translateY(360px) translateX(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(46) {
+    transform: rotateX(0deg) translateZ(370px) translateY(-120px) translateX(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(47) {
+    transform: rotateX(90deg) translateZ(130px) translateY(380px) translateX(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(48) {
+    transform: rotateX(0deg) translateZ(390px) translateY(-140px) translateX(-140px);
+    background: red;
+  }
+  
+  /* bottom */
+  .face:nth-child(49) {
+    transform: rotateX(-90deg) translateZ(290px) translateY(-260px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(50) {
+    transform: rotateX(0deg) translateZ(270px) translateY(300px) translateX(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(51) {
+    transform: rotateX(-90deg) translateZ(310px) translateY(-280px) translateX(-20px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(52) {
+    transform: rotateX(0deg) translateZ(290px) translateY(320px) translateX(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(53) {
+    transform: rotateX(-90deg) translateZ(330px) translateY(-300px) translateX(-40px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(54) {
+    transform: rotateX(0deg) translateZ(310px) translateY(340px) translateX(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(55) {
+    transform: rotateX(-90deg) translateZ(350px) translateY(-320px) translateX(-60px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(56) {
+    transform: rotateX(0deg) translateZ(330px) translateY(360px) translateX(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(57) {
+    transform: rotateX(-90deg) translateZ(370px) translateY(-340px) translateX(-80px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(58) {
+    transform: rotateX(0deg) translateZ(350px) translateY(380px) translateX(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(59) {
+    transform: rotateX(-90deg) translateZ(390px) translateY(-360px) translateX(-100px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(60) {
+    transform: rotateX(0deg) translateZ(370px) translateY(400px) translateX(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(61) {
+    transform: rotateX(-90deg) translateZ(410px) translateY(-380px) translateX(-120px);
+    background-image: url("../media/assignment3/fans.jpeg");
+    background-size: cover;
+  }
+  .face:nth-child(62) {
+    transform: rotateX(0deg) translateZ(390px) translateY(420px) translateX(-140px);
+    background: red;
+  }
+  .face:nth-child(63) {
+    transform: rotateX(-90deg) translateZ(365px) translateY(-318px) translateX(-138px);
+    background-image: url("../media/assignment3/stadium.jpg");
+    background-size: cover;
+  }
+  .face:nth-child(64) {
+    transform: rotateX(90deg) translateZ(213px) translateY(320px) translateX(-138px);
+    background-image: url("../media/assignment3/stadium.jpg");
+    background-size: cover;
+  }
+
+  #soccerBall {
+    position: absolute;
+    width: 100px;
+    top: 105px;
+    left: 200px;
+  }
+  /* #soccerBall {
+    position: absolute;
+    width: 200px;
+    fill: black;
+    height: auto;
+    top: 105px;
+    left: 200px;
+  } */
+  
+  /* transition */
+  .cube {
+    transition-property: transform;
+    transition-duration: 2s;
+  }
+  
+  /* .cube:hover {
+    transform: rotateY(180deg);
+  } */
+  
+  .cube:active {
+    transform:rotateX(120deg);
+  }
+
+  @keyframes firstHalf {
+    0% {transform:  translate(0px, 0px);}
+    25% {transform: translate(110px, 105px) rotate(0deg);}
+    50% {transform: translate(190px, -115px) rotate(90deg);}
+    75% {transform: translate(80px, 0px) rotate(360deg);}
+    100% {transform: translate(200px, 0px);}
+  }
+
+  @keyframes secondHalf {
+    0% {transform:  translate(200px, 0px);}
+    25% {transform: translate(0px, 0px) rotate(0deg);}
+    50% {transform: translate(-200px, 105px) rotate(90deg);}
+    75% {transform: translate(-80px, 50px) rotate(360deg);}
+    100% {transform: translate(-200px, 0px);}
+  }
+  #soccerBall {
+    animation: 
+      firstHalf 5s linear 0s 1 normal forwards,
+      secondHalf 5s linear 5s 1 normal forwards;
+  }
+
+  @keyframes zoom {
+    0% {transform: perspective(10000px);}
+    25% {transform: perspective(5000px);}
+    50% {transform: perspective(2000px);}
+    75% {transform: perspective(1000px);}
+    100% {transform: perspective(600px);}
+  }
+  /* .cube:hover {
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  } */
+  
+  
+  /* animation */
+  /* @keyframes spin {
+    from {transform: rotateY(0deg) rotateX(0deg);}
+    to {transform: rotateY(360deg) rotateX(360deg);}
+  }
+  
+  .cube {
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+  } */
