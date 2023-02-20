@@ -124,9 +124,10 @@ body {
   .face:nth-child(17) {
     transform: rotateY(180deg) translateZ(-245px);
     background: blue;
+    opacity: 0;
   }
   .face:nth-child(18) {
-    transform: rotateY(180deg) translateZ(-245px) translateX(140px) translateY(-160px);
+    transform: rotateY(180deg) translateZ(-248px) translateX(140px) translateY(-140px);
     background: red;
   }
   
@@ -428,7 +429,7 @@ body {
   
   
   /* animation */
-  /* @keyframes spin {
+  @keyframes spin {
     from {transform: rotateY(0deg) rotateX(0deg);}
     to {transform: rotateY(360deg) rotateX(360deg);}
   }
@@ -439,4 +440,4 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   
-  } */
+  }
