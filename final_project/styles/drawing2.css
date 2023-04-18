@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed";
+    background-image: url(../media/soccer_field.jpg);
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
