@@ -16,3 +16,9 @@ body {
     background-size: cover;
     position: relative;
 }
+
+#trophy {
+    position: absolute;
+    top: 41%;
+    left: 43%;
+}
