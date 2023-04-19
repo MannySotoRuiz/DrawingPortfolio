@@ -10,38 +10,20 @@ const context2 = canvas2.getContext('2d');
 
 let width;
 let height;
-// determine pixel density of display
 let pxScale = window.devicePixelRatio;
 
-
-// access image from the DOM
-
-
 function setup() {
-    // full-browser canvas
     width = 600;
     height = 400;
-  
-    // set the CSS display size
     canvas1.style.width = width + 'px';
     canvas1.style.height = height + 'px';
-  
-    // set the canvas pixel density
     canvas1.width = width * pxScale;
     canvas1.height = height * pxScale;
-  
-    // normalize the coordinate system
     context1.scale(pxScale, pxScale);
-
-    // set the CSS display size
     canvas2.style.width = width + 'px';
     canvas2.style.height = height + 'px';
-  
-    // set the canvas pixel density
     canvas2.width = width * pxScale;
     canvas2.height = height * pxScale;
-  
-    // normalize the coordinate system
     context2.scale(pxScale, pxScale);
 }
 
