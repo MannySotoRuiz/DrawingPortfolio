@@ -16,3 +16,14 @@ body {
     background-size: cover;
     position: relative;
 }
+
+.person1 {
+    position: absolute;
+    top: 70%;
+    right: 50%;
+}
+.person2 {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+}
