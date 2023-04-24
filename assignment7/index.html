@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <div id="gridContainer"> -->
+        <!-- <div id="imgContainer"> -->
+            <img id="trophy" src="./media/world-cup-fifa2018.gif">
+        <!-- </div> -->
+    <!-- </div> -->
+
+    <div id="container">
+        <audio id="audioPlayer" controls loop>
+            <source src="./media/IShowSpeed-World Cup.ogg" type="audio/ogg" >
+        </audio>
+
+        <!-- video cant autoplay unless muted -->
+        <video id="videoPlayer" src="./media/WorldCupChanged.mp4" loop playsinline type="video/mp4" width="1280" height="720" controls>  
+        </video>
+        <canvas width="450" height="300"></canvas>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
