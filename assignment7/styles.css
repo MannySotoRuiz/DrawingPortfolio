@@ -5,9 +5,6 @@
 }
 
 #container {
-	/* background-color: rgba(75, 191, 13, 0.5);
-	background-image: url(media/all-colors.png);
-	background-size: cover; */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -18,8 +15,9 @@
 }
 
 canvas {
-	margin-left: 300px;
-	outline: 2px solid red;
+	position: absolute;
+	top: 30%;
+	left: 30%;
 }
 
 #videoPlayer {
