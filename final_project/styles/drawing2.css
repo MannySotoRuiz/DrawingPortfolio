@@ -128,20 +128,7 @@ body {
     translateY(-140px);
   background-image: url("../media/outside.webp");
   background-size: contain;
-  /* background: linear-gradient(
-    to right,
-    #edbb00,
-    #004d98,
-    #a50044,
-    #db0030,
-    #000000,
-    #ffed02
-  ); */
 }
-/* .face:nth-child(17) {
-    transform: rotateX(90deg) translateZ(-225px) translateX(620px) translateY(315px);
-    background: blue;
-  } */
 
 /* back */
 .face:nth-child(17) {

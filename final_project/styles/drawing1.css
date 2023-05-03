@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed";
-  background-image: url(../media/campnou.webp);
+  /* background-image: url(../media/outside2.webp); */
   background-color: #cccccc;
   height: 100vh;
   background-position: center;
@@ -28,7 +28,7 @@ body {
   left: 10%;
 }
 
-.animated-image {
+.animate-right {
   animation: slideUpAndRight 3s ease-out infinite;
 }
 
@@ -47,5 +47,27 @@ body {
   }
   100% {
     transform: translateX(500px) translateY(-200px) scale(0.4);
+  }
+}
+
+.animate-left {
+  animation: slideUpAndLeft 3s ease-out infinite;
+}
+
+@keyframes slideUpAndLeft {
+  0% {
+    transform: translateX(500px) translateY(0) scale(1);
+  }
+  25% {
+    transform: translateX(250px) translateY(0) scale(0.8);
+  }
+  50% {
+    transform: translateX(0px) translateY(-50px) scale(0.7);
+  }
+  75% {
+    transform: translateX(0) translateY(-100px) scale(0.5);
+  }
+  100% {
+    transform: translateX(0px) translateY(-200px) scale(0.4);
   }
 }
