@@ -24,22 +24,23 @@ body {
   height: 100%;
   object-fit: cover; /* cover the parent element proportionally */
   mix-blend-mode: lighten;
+  display: none;
 }
 
 #trophy {
   position: absolute;
-  top: 41%;
+  top: 50%;
   left: 43%;
 }
 
 #pointleft {
   position: absolute;
-  top: 60%;
-  left: 24%;
+  top: 55%;
+  left: 20%;
 }
 
 #pointright {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 70%;
 }
