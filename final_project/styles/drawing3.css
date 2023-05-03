@@ -29,18 +29,24 @@ body {
 
 #trophy {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 43%;
 }
 
 #pointleft {
   position: absolute;
-  top: 55%;
-  left: 20%;
+  top: 35%;
+  left: 10%;
 }
 
 #pointright {
   position: absolute;
-  top: 55%;
-  left: 70%;
+  top: 35%;
+  left: 65%;
+}
+
+.animate-up {
+  /* animation: slideUp 3s ease-out; */
+  transition: transform 1s;
+  transform: translate(0px, -200px);
 }

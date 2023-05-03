@@ -1,10 +1,15 @@
+window.addEventListener("load", function () {
+  setup();
+});
+
+const trophy = document.getElementById("trophy");
+
 function displayFireworks() {
-  var trophy = document.getElementById("trophy");
-  var fireworks = document.getElementById("fireworks");
+  const fireworks = document.getElementById("fireworks");
+  trophy.classList.add("animate-up");
 
   document.getElementById("audioPlayer").play();
 
-  trophy.style.top = "30%";
   fireworks.style.display = "block"; // Display the fireworks video
 
   // Remove the onclick event listener after the fireworks have been displayed
