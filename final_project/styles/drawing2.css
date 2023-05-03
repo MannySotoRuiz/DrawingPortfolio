@@ -6,6 +6,20 @@ body {
   justify-content: center;
   background-image: url(../media/inside.webp);
   background-size: cover;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+#audioPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#audioPlayer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #scene {
