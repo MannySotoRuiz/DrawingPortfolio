@@ -31,3 +31,15 @@ body {
   top: 41%;
   left: 43%;
 }
+
+#pointleft {
+  position: absolute;
+  top: 60%;
+  left: 24%;
+}
+
+#pointright {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
