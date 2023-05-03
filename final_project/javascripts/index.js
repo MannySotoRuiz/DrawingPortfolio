@@ -30,6 +30,12 @@ function setup() {
 function displayStandings(standings) {
     const container = document.getElementById("apiDataContainer");
     container.classList.remove("hidden");
+    const button = document.getElementById("button");
+    button.classList.add("hidden");
+
+    const title = document.createElement("h2");
+    title.textContent = "Premier League Standings:";
+    container.appendChild(title);
 
     for (let i  = 0; i < standings.length; i++) {
         const currentTeam = standings[i];
@@ -39,7 +45,9 @@ function displayStandings(standings) {
         const points = currentTeam.points;
 
         const parentDiv = document.createElement("div");
+        parentDiv.classList.add("dataDiv");
         const rankP = document.createElement("p");
+        rankP.classList.add("rank");
         rankP.textContent = `Rank: ${rank}`;
 
         const logoDiv = document.createElement("div");
@@ -49,7 +57,8 @@ function displayStandings(standings) {
         logoDiv.appendChild(imgLogo);
 
         const rest = document.createElement("p");
-        rest.textContent =  `${teamName}   Points: ${points}`;
+        rest.classList.add("restInfo");
+        rest.textContent =  `${teamName} - Points: ${points}`;
 
         parentDiv.appendChild(rankP);
         parentDiv.appendChild(logoDiv);
