@@ -5,12 +5,13 @@ window.addEventListener("load", function () {
 const trophy = document.getElementById("trophy");
 
 function displayFireworks() {
-  const fireworks = document.getElementById("fireworks");
   trophy.classList.add("animate-up");
 
   document.getElementById("audioPlayer").play();
-
-  fireworks.style.display = "block"; // Display the fireworks video
+  const backgroundvids = ["fireworks", "fireworks2"];
+  const randomIdx = Math.floor(Math.random() * backgroundvids.length);
+  const randomvid = backgroundvids[randomIdx];
+  document.getElementById(randomvid).style.display = "block";
 
   // Remove the onclick event listener after the fireworks have been displayed
   trophy.onclick = null;
