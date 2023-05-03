@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Roboto Condensed";
+    background-image: url(../media/index_background.jpeg);
+    background-color: #cccccc;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iconCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 170px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.iconCard p {
+    font-size: 25px;
+}
+
+.iconCard:hover {
+    color: #6ECCAF;
+    transition: all 0.2s linear;
+    width: 250px;
+    height: 200px;
+}
+
+.iconCard:not(:hover) {
+    transition: all 0.2s linear;
+}
+a, a:visited {
+    text-decoration: none;
+    outline: 0;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+#apiDataContainer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#apiDataConainer div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.teamLogo {
+    width: 50px;
+    height: 50px;
+}
+.teamLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
